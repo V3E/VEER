@@ -2002,7 +2002,7 @@ os.execute('rm -rf VEER.lua')
 os.execute("rm -fr plugins_/help_rep.lua")
 os.execute("rm -fr plugins_/ZHRFA.lua")
 os.execute("rm -fr plugins_/games.lua")
-os.execute('wget https://raw.githubusercontent.com/surse/VEER/master/VEER.lua') 
+os.execute('wget https://raw.githubusercontent.com/V3E/VEER/master/VEER.lua') 
 os.execute('cd plugins_;wget https://raw.githubusercontent.com/V3E/VEER/master/plugins/help_rep.lua') 
 os.execute('cd plugins_;wget https://raw.githubusercontent.com/V3E/VEER/master/plugins/ZHRFA.lua') 
 os.execute('cd plugins_;wget https://raw.githubusercontent.com/V3E/VEER/master/plugins/games.lua') 
@@ -4239,7 +4239,7 @@ os.execute('rm -rf VEER.lua')
 os.execute("rm -fr plugins_/help_rep.lua")
 os.execute("rm -fr plugins_/ZHRFA.lua")
 os.execute("rm -fr plugins_/games.lua")
-os.execute('wget https://raw.githubusercontent.com/surse/VEER/master/VEER.lua') 
+os.execute('wget https://raw.githubusercontent.com/V3E/VEER/master/VEER.lua') 
 os.execute('cd plugins_;wget https://raw.githubusercontent.com/V3E/VEER/master/plugins/help_rep.lua') 
 os.execute('cd plugins_;wget https://raw.githubusercontent.com/V3E/VEER/master/plugins/ZHRFA.lua') 
 os.execute('cd plugins_;wget https://raw.githubusercontent.com/V3E/VEER/master/plugins/games.lua') 
@@ -5440,7 +5440,7 @@ VEER_sendMsg(msg.chat_id_, msg.id_, 1, '*📮¦ لا تستطيع رفع وتن�
 return false  end
 if result.id_ then  
 if not VEERBOT:sismember(VEER_ID..'vip:group'..msg.chat_id_,result.id_) then
-setvip = '*📮¦* العضــو » ❪ [@'..username..'] ❫\n*📬¦ الايـدي » ❪* `'..result.id_..'` ❫\n*🚸¦* تـم تـرقيتـه مميز للـكروب'   
+setvip = '*📮¦* العضــو » ❪ [@'..username..'] ❫\n*??¦ الايـدي » ❪* `'..result.id_..'` ❫\n*🚸¦* تـم تـرقيتـه مميز للـكروب'   
 VEERBOT:sadd(VEER_ID..'vip:group'..msg.chat_id_,result.id_)  
 VEERBOT:set(VEER_ID.."user:Name"..result.id_,"@"..username)
 else
@@ -8949,7 +8949,7 @@ function getmepar(extra,result,success)
 if result.username_ then 
 zo = '*📮¦ معرفك  ⟀ *\n\n*📬¦ ➺⦅* [@'..result.username_..']* ⦆*\n' 
 else 
-zo = '*📬¦ انت لا تمتلك معرف في حسابك *\n🍃' 
+zo = '*📬¦ انت لا تمتلك معرف في حسابك *\n??' 
 end 
 local mohmad = zo
 VEER_sendMsg(msg.chat_id_, msg.id_, 1,mohmad, 1, 'md') 
